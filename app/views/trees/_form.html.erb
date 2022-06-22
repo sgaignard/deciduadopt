@@ -1,0 +1,9 @@
+<%= simple_form_for(tree) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :description, as: :text %>
+  <%= f.input :price_per_year, as: :numeric %>
+  <%= f.input :fruits %>
+  <%= f.input :quantity_by_year, as: :numeric %>
+  <%= f.button :submit %>
+<% end %>
