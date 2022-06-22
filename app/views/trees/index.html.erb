@@ -1,0 +1,7 @@
+<h1>Here's the trees</h1>
+
+<%= link_to "Add a tree", new_tree_path %>
+<% @trees.each do |tree| %>
+  <h2><%= link_to tree.name, tree_path(tree) %></h2>
+  <p><%= tree.fruits %></p>
+<% end %>
